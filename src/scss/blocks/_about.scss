@@ -1,0 +1,75 @@
+.section-about {
+    background-image: url("../img/about/bg/background.jpg");
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (min--moz-device-pixel-ratio: 2),
+        only screen and (-o-min-device-pixel-ratio: 2/1),
+        only screen and (min-device-pixel-ratio: 2),
+        only screen and (min-resolution: 192dpi),
+        only screen and (min-resolution: 2dppx) {
+        /* 2x Retina styles here */
+        background-image: url("../img/about/bg/background@2x.jpg");
+    }
+    @media only screen and (-webkit-min-device-pixel-ratio: 3),
+        only screen and (min--moz-device-pixel-ratio: 3),
+        only screen and (-o-min-device-pixel-ratio: 3/1),
+        only screen and (min-device-pixel-ratio: 3),
+        only screen and (min-resolution: 384dpi),
+        only screen and (min-resolution: 3dppx) {
+        /* 3x Retina styles here */
+        background-image: url("../img/about/bg/background@3x.jpg");
+    }
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 120 / 16 * 1rem 0;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    &__text-description {
+        max-width: 540px;
+    }
+
+    &__title {
+        margin-bottom: 60px;
+    }
+
+    &__description {
+        margin-bottom: 30px;
+        line-height: 26 / 16 * 1rem;
+        font-size: 1rem;
+
+        &:nth-child(3){
+            margin-bottom: 50 / 16 * 1rem;
+        }
+    }
+
+    &__btn {
+        margin-bottom: 15px;
+    }
+
+    &__image-list {
+        max-width: 475px;
+        flex: 0 1 475px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    &__image-item {
+        align-self: flex-start;
+        font-size: 0;
+        margin-bottom: 5px;
+
+        &:nth-child(2n) {
+            align-self: flex-end;
+            margin-bottom: 0;
+        }
+    }
+
+
+}

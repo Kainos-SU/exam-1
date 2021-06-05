@@ -1,69 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Aleo:wght@400;700&family=Josefin+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aleo:wght@400;700&family=Josefin+Sans:wght@300;400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
     <main>
         <section class="title-section">
             <div class="container">
-                <h1 class="title-section__title">Bhromaon</h1>
-                <div class="title-section__subtitle">Safe Travel Anywhere</div>
-                <form action="" class="title-section__search-form">
-                    <input type="text" name="search" id="search" class="title-section__search-input">
-                    <button type="submit" class="title-section__search-btn">
-                        search
-                        <i class="icon-search"></i>
-                    </button>
-                </form>
-                <div class="title-section__scroll-text">scroll down</div>
-                <div class="title-section__sroll-icon">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        width="15px" height="9px">
-                            <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
-                                d="M4.125,4.651 L0.750,1.276 L1.594,0.432 L7.500,6.339 L13.406,0.362 L14.250,1.206 L7.500,8.026 L6.656,7.183 L4.125,4.651 Z"/>
-                    </svg>
+                <div class="title-section__wrapper">
+                    <h1 class="title-section__title">Bhromaon</h1>
+                    <div class="title-section__subtitle">Safe Travel Anywhere</div>
+                    <form action="" class="title-section__search-form search-form">
+                        <input type="text" name="search" id="search" class="search-form__input"
+                            placeholder="Search Your Travel Destination">
+                        <button type="submit" class="search-form__btn">
+                            search
+                            <i class="icon-search"></i>
+                        </button>
+                    </form>
+                    <div class="title-section__scroll">
+                        <div class="title-section__scroll-text">scroll down</div>
+                        <svg class="title-section__sroll-icon" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="9px">
+                            <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                                d="M4.125,4.651 L0.750,1.276 L1.594,0.432 L7.500,6.339 L13.406,0.362 L14.250,1.206 L7.500,8.026 L6.656,7.183 L4.125,4.651 Z" />
+                        </svg>
+                    </div>
                 </div>
             </div>
         </section>
 
         <header class="header">
             <div class="container">
-                <h2 class="header__title">
-                    Bhromaon
-                </h2>
-                <nav class="header__nav">
-                    <ul class="header__nav-list">
-                        <li class="header__nav-item">
-                            <a href="#about" class="header__nav-anchor">
-                                Who Wev Are
-                            </a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a href="" class="header__nav-anchor">
-                                What We Do
-                            </a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a href="" class="header__nav-anchor">
-                                Travel With Us
-                            </a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a href="" class="header__nav-anchor">
-                                Contact Us
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+                <div class="header__wrapper">
+                    <h2 class="header__title">
+                        Bhromaon
+                    </h2>
+                    <nav class="header__nav">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item">
+                                <a href="#about" class="header__nav-anchor">
+                                    Who Wev Are
+                                </a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#offer" class="header__nav-anchor">
+                                    What We offer
+                                </a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#comments" class="header__nav-anchor">
+                                    our clients
+                                </a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#contact" class="header__nav-anchor">
+                                    Contact Us
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </header>
 
@@ -77,32 +84,174 @@
                         <p class="section-about__description">
                             Tion and dislike men who are so beguiled and demoralized by
                             desire by the charms of pleasure of the moment, so blinded by desire,
-                            that they cannot foresee 
+                            that they cannot foresee
                         </p>
                         <p class="section-about__description">
                             Ddislike men who are so beguiled and demoralized by the
                             charms of pleasure of the moment, so blinded by desire, that.
                         </p>
-                        <a href="" class="section-about__btn btn">
+                        <a href="#" class="section-about__btn btn">
                             Explore Places
                         </a>
                     </div>
                     <ul class="section-about__image-list">
                         <li class="section-about__image-item">
                             <picture class="section-about__img">
-                                <source media="" srcset="">
-                                <source media="" srcset="">
-                                <source media="" srcset="">
-                                <img src="img/about/house-on-beach/" alt="">
+                                <source media="max-resolution: 1dppx"
+                                    srcset="./img/about/house-on-beach/house-on-beach.jpg">
+                                <source media="max-resolution: 2dppx"
+                                    srcset="./img/about/house-on-beach/house-on-beach@2x.jpg">
+                                <source media="max-resolution: 3dppx"
+                                    srcset="./img/about/house-on-beach/house-on-beach@3x.jpg">
+                                <img src="./img/about/house-on-beach/house-on-beach.jpg" alt="House on beach">
                             </picture>
                         </li>
                         <li class="section-about__image-item">
-                            <picture class="section-about__img"></picture>
+                            <picture class="section-about__img">
+                                <source media="max-resolution: 1dppx" srcset="./img/about/mountians/mountian.jpg">
+                                <source media="max-resolution: 2dppx" srcset="./img/about/mountians/mountian@2x.jpg">
+                                <source media="max-resolution: 3dppx" srcset="./img/about/mountians/mountian@3x.jpg">
+                                <img src="./img/about/mountians/mountian.jpg" alt="Mountians">
+                            </picture>
                         </li>
                     </ul>
                 </div>
             </div>
         </section>
+
+        <section class="section-icon">
+            <div class="container">
+                <ul class="section-icon__icon-list">
+                    <li class="section-icon__icon-item">
+                        <object data="img/icon-section/search.svg" type="image/svg+xml" class="section-icon__img">
+                            So poor that can not aford a browser, which support svg
+                        </object>
+                    </li>
+                    <li class="section-icon__icon-item">
+                        <object data="img/icon-section/mark.svg" type="image/svg+xml" class="section-icon__img">
+                            So poor that can not aford a browser, which support svg
+                        </object>
+                    </li>
+                    <li class="section-icon__icon-item">
+                        <object data="img/icon-section/like.svg" type="image/svg+xml" class="section-icon__img">
+                            So poor that can not aford a browser, which support svg
+                        </object>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="spain-1" id="offer">
+            <div class="container">
+                <div class="spain-1__wrapper description-block">
+                    <div class="description-block__text-block">
+                        <h2 class="description-block__subtitle">
+                            spain
+                        </h2>
+                        <h3 class="description-block__title">
+                            Grand Spain Madrid
+                        </h3>
+                        <p class="description-block__text">
+                            But I must explain to you how all
+                            this mistaken idea of account to denouncing pleasure
+                            and praising pain was account born and I account will
+                            give you a complete account of the system
+                        </p>
+                        <a href="#" class="description-block__btn btn">
+                            book now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="spain-2">
+            <div class="container">
+                <div class="spain-2__wrapper description-block description-block--right">
+                    <div class="description-block__text-block">
+                        <h2 class="description-block__subtitle">
+                            spain
+                        </h2>
+                        <h3 class="description-block__title">
+                            Grand Spain Madrid
+                        </h3>
+                        <p class="description-block__text">
+                            But I must explain to you how all
+                            this mistaken idea of account to denouncing pleasure
+                            and praising pain was account born and I account will
+                            give you a complete account of the system
+                        </p>
+                        <a href="#" class="description-block__btn btn">
+                            book now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="comments" id="comments">
+            <div class="container">
+                <h2 class="comments__title title">
+                    What Our Tourist Say
+                </h2>
+                <div class="comments__text-block">
+                    <picture class="comments__img"></picture>
+                    <div class="comments__coment">
+                        <h3 class="comments__author">
+                            Sam Sumon
+                        </h3>
+                        <p class="comments__quote">
+                            <i class="icon-quote"></i>
+                            But I must explain to you how all this mistaken idea of
+                            account to denouncinpleasure and praising pain But I
+                            must explain to you how all this mistaken idea of account
+                            to nai denouncing pleasure and praising pain was account
+                            born and I account will give you a complete account of the
+                            system was account born and I account will give you a nai
+                            the complete account of the system
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer class="footer" id="contact">
+        <div class="footer-wrapper">
+            <h2 class="footer__title">
+                Bhromaon
+            </h2>
+            <h3 class="footer__subtitle">
+                Safe Travel Anywhere
+            </h3>
+            <ul class="footer__social-list">
+                <li class="footer__social-item">
+                    <a href="#" class="footer__links">
+                        <i class="icon-facebook"></i>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="#" class="footer__links">
+                        <i class="icon-twitter"></i>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="#" class="footer__links">
+                        <i class="icon-linkedin2"></i>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="#" class="footer__links">
+                        <i class="icon-youtube"></i>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="#" class="footer__links">
+                        <i class="icon-pinterest"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
