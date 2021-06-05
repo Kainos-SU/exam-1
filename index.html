@@ -97,20 +97,20 @@
                     <ul class="section-about__image-list">
                         <li class="section-about__image-item">
                             <picture class="section-about__img">
-                                <source media="max-resolution: 1dppx"
+                                <source media="(max-resolution: 1dppx)"
                                     srcset="./img/about/house-on-beach/house-on-beach.jpg">
-                                <source media="max-resolution: 2dppx"
+                                <source media="(max-resolution: 2dppx)"
                                     srcset="./img/about/house-on-beach/house-on-beach@2x.jpg">
-                                <source media="max-resolution: 3dppx"
+                                <source media="(max-resolution: 3dppx)"
                                     srcset="./img/about/house-on-beach/house-on-beach@3x.jpg">
                                 <img src="./img/about/house-on-beach/house-on-beach.jpg" alt="House on beach">
                             </picture>
                         </li>
                         <li class="section-about__image-item">
                             <picture class="section-about__img">
-                                <source media="max-resolution: 1dppx" srcset="./img/about/mountians/mountian.jpg">
-                                <source media="max-resolution: 2dppx" srcset="./img/about/mountians/mountian@2x.jpg">
-                                <source media="max-resolution: 3dppx" srcset="./img/about/mountians/mountian@3x.jpg">
+                                <source media="(max-resolution: 1dppx)" srcset="./img/about/mountians/mountian.jpg">
+                                <source media="(max-resolution: 2dppx)" srcset="./img/about/mountians/mountian@2x.jpg">
+                                <source media="(max-resolution: 3dppx)" srcset="./img/about/mountians/mountian@3x.jpg">
                                 <img src="./img/about/mountians/mountian.jpg" alt="Mountians">
                             </picture>
                         </li>
@@ -121,23 +121,36 @@
 
         <section class="section-icon">
             <div class="container">
-                <ul class="section-icon__icon-list">
-                    <li class="section-icon__icon-item">
-                        <object data="img/icon-section/search.svg" type="image/svg+xml" class="section-icon__img">
-                            So poor that can not aford a browser, which support svg
-                        </object>
-                    </li>
-                    <li class="section-icon__icon-item">
-                        <object data="img/icon-section/mark.svg" type="image/svg+xml" class="section-icon__img">
-                            So poor that can not aford a browser, which support svg
-                        </object>
-                    </li>
-                    <li class="section-icon__icon-item">
-                        <object data="img/icon-section/like.svg" type="image/svg+xml" class="section-icon__img">
-                            So poor that can not aford a browser, which support svg
-                        </object>
-                    </li>
-                </ul>
+                <div class="section-icon__wrapper">
+                    <svg
+                        class="section-icon__arcs"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        height="97.5px"
+                        viewBox="0 0 776.5 97.5">
+                        <path fill-rule="evenodd" stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-dasharray="0, 5"
+                            stroke-linecap="round" stroke-linejoin="miter" opacity="0.502" fill="none"
+                            d="M1.500,95.500 C1.500,95.500 193.977,-116.958 394.559,95.500 C394.559,95.500 570.827,-118.254 778.500,95.500 " />
+                    </svg>
+                    <ul class="section-icon__icon-list">
+                        <li class="section-icon__icon-item">
+                            <object data="img/icon-section/search.svg" type="image/svg+xml" class="section-icon__img">
+                                So poor that can not aford a browser, which support svg
+                            </object>
+                            <div class="section-icon__text">search places</div>                     </li>
+                        <li class="section-icon__icon-item">
+                            <object data="img/icon-section/mark.svg" type="image/svg+xml" class="section-icon__img">
+                                So poor that can not aford a browser, which support svg
+                            </object>
+                            <div class="section-icon__text">select places</div>                     </li>
+                        <li class="section-icon__icon-item">
+                            <object data="img/icon-section/like.svg" type="image/svg+xml" class="section-icon__img">
+                                So poor that can not aford a browser, which support svg
+                            </object>
+                            <div class="section-icon__text">book &amp; enjoy</div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
 
@@ -195,14 +208,18 @@
                     What Our Tourist Say
                 </h2>
                 <div class="comments__text-block">
-                    <picture class="comments__img"></picture>
-                    <div class="comments__coment">
+                    <picture class="comments__img">
+                        <source media="(max-resolution: 1dppx)" srcset="./img/quotes/some-dude/some-dude.jpg">
+                        <source media="(max-resolution: 2dppx)" srcset="./img/quotes/some-dude/some-dude@2x.jpg">
+                        <source media="(max-resolution: 3dppx)" srcset="./img/quotes/some-dude/some-dude@3x.jpg">
+                        <img src="./img/quotes/some-dude/some-dude.jpg" alt="Some dude, IDK!">
+                    </picture>
+                    <div class="comments__comment">
                         <h3 class="comments__author">
                             Sam Sumon
                         </h3>
                         <p class="comments__quote">
-                            <i class="icon-quote"></i>
-                            But I must explain to you how all this mistaken idea of
+                            <i class="icon-quote-left"></i> But I must explain to you how all this mistaken idea of
                             account to denouncinpleasure and praising pain But I
                             must explain to you how all this mistaken idea of account
                             to nai denouncing pleasure and praising pain was account
@@ -254,4 +271,5 @@
         </div>
     </footer>
 </body>
+
 </html>

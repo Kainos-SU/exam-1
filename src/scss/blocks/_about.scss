@@ -1,26 +1,9 @@
 .section-about {
-    background-image: url("../img/about/bg/background.jpg");
-    @media only screen and (-webkit-min-device-pixel-ratio: 2),
-        only screen and (min--moz-device-pixel-ratio: 2),
-        only screen and (-o-min-device-pixel-ratio: 2/1),
-        only screen and (min-device-pixel-ratio: 2),
-        only screen and (min-resolution: 192dpi),
-        only screen and (min-resolution: 2dppx) {
-        /* 2x Retina styles here */
-        background-image: url("../img/about/bg/background@2x.jpg");
-    }
-    @media only screen and (-webkit-min-device-pixel-ratio: 3),
-        only screen and (min--moz-device-pixel-ratio: 3),
-        only screen and (-o-min-device-pixel-ratio: 3/1),
-        only screen and (min-device-pixel-ratio: 3),
-        only screen and (min-resolution: 384dpi),
-        only screen and (min-resolution: 3dppx) {
-        /* 3x Retina styles here */
-        background-image: url("../img/about/bg/background@3x.jpg");
-    }
+
+    @include adaptiveBG("../img/about/bg/background");
 
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left bottom;
     background-size: cover;
     padding: 120 / 16 * 1rem 0;
 
@@ -58,16 +41,23 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+
+        @media screen and (max-width: 540px) {
+            display: none;
+        }
     }
 
     &__image-item {
         align-self: flex-start;
         font-size: 0;
         margin-bottom: 5px;
+        flex: 0 0 auto;
+        max-width: 350px;
 
         &:nth-child(2n) {
             align-self: flex-end;
             margin-bottom: 0;
+            margin-right: 0;
         }
     }
 
@@ -82,6 +72,8 @@
     }
 
     @media screen and (max-width: 720px) {
+        padding: 80 / 16 * 1rem 0;
+
         &__wrapper {
             flex-direction: column;
             align-items: stretch;
@@ -95,6 +87,20 @@
         &__btn {
             margin-left: auto;
             margin-right: auto;
+        }
+
+        &__image-list {
+            max-width: 100%;
+            flex: 0 1 auto;
+            flex-direction: row;
+        }
+
+        &__image-item {
+            width: 100%;
+            flex: 0 1 auto;
+            min-width: 0;
+            margin-bottom: 0;
+            margin-right: 5px;
         }
     }
 }

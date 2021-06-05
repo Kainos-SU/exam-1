@@ -8,6 +8,7 @@
     text-transform: capitalize;
     font-family: 'Aleo', serif;
     font-size: 36 / 16 * 1rem;
+    font-weight: 400;
 }
 
 .btn {
@@ -106,6 +107,53 @@
             flex: 0 1 50%;
             width: 50%;
             border: 2px solid #fff;
+        }
+    }
+}
+
+.description-block {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &--right {
+        justify-content: flex-end;
+    }
+
+    &__text-block {
+        background-color: $description-block-bg;
+        // max-width: $half-width;
+        flex: 0 0 $half-width;
+        width: 100%;
+        padding: 50 / 16 * 1rem 30 / 16 * 1rem;
+    }
+
+    &__subtitle {
+        text-transform: capitalize;
+        @extend %description-text;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        @extend %description-text;
+    }
+
+    &__text {
+        font-size: 1rem;
+        margin-bottom: 50 / 16 * 1rem;
+    }
+
+    @media screen and (max-width: 720px) {
+        justify-content: center;
+        text-align: center;
+
+        &__text-block {
+            flex: 0 1 auto;
+        }
+
+        &__btn {
+            margin: 0 auto;
         }
     }
 }

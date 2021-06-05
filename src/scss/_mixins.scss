@@ -1,0 +1,45 @@
+@mixin bgImage ($imgUrl) {
+    background-image: url($imgUrl + ".jpg");
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (min--moz-device-pixel-ratio: 2),
+        only screen and (-o-min-device-pixel-ratio: 2/1),
+        only screen and (min-device-pixel-ratio: 2),
+        only screen and (min-resolution: 192dpi),
+        only screen and (min-resolution: 2dppx) {
+        /* 2x Retina styles here */
+        background-image: url($imgUrl + "@2x.jpg");
+    }
+    @media only screen and (-webkit-min-device-pixel-ratio: 3),
+        only screen and (min--moz-device-pixel-ratio: 3),
+        only screen and (-o-min-device-pixel-ratio: 3/1),
+        only screen and (min-device-pixel-ratio: 3),
+        only screen and (min-resolution: 384dpi),
+        only screen and (min-resolution: 3dppx) {
+        /* 3x Retina styles here */
+        background-image: url($imgUrl + "@3x.jpg");
+    }
+    background-position: center;
+    background-size: cover;
+}
+
+@mixin adaptiveBG ($imgUrl) {
+    background-image: url($imgUrl + ".jpg");
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (min--moz-device-pixel-ratio: 2),
+        only screen and (-o-min-device-pixel-ratio: 2/1),
+        only screen and (min-device-pixel-ratio: 2),
+        only screen and (min-resolution: 192dpi),
+        only screen and (min-resolution: 2dppx) {
+        /* 2x Retina styles here */
+        background-image: url($imgUrl + "@2x.jpg");
+    }
+    @media only screen and (-webkit-min-device-pixel-ratio: 3),
+        only screen and (min--moz-device-pixel-ratio: 3),
+        only screen and (-o-min-device-pixel-ratio: 3/1),
+        only screen and (min-device-pixel-ratio: 3),
+        only screen and (min-resolution: 384dpi),
+        only screen and (min-resolution: 3dppx) {
+        /* 3x Retina styles here */
+        background-image: url($imgUrl + "@3x.jpg");
+    }
+}
