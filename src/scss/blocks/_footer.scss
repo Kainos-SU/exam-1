@@ -1,4 +1,112 @@
 .footer {
     background-color: #000;
     text-align: center;
+    padding: 120px 0 50px;
+
+    &__title {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 24px;
+        margin-bottom: 17 / 16 * 1rem;
+    }
+
+    &__subtitle {
+        text-transform: capitalize;
+        font-size: 1rem;
+        font-weight: 400;
+        margin-bottom: 30 / 16 * 1rem;
+    }
+
+    &__social-list {
+        width: 200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__links {
+        color: #fff;
+        vertical-align: middle;
+        font-size: 1rem;
+        
+        & i {
+            transition-property: color, background-color;
+            transition: $footer-link-transition-time;
+        }
+
+        &--youtube {
+
+            & i {
+                border-radius: 25%;
+            }
+
+            &:hover i {
+                background-color: #fff;
+                color: red;
+            }
+        }
+
+        &--facebook {
+            &:hover i {
+                background-color: #1877f2;
+                border-radius: 50%;
+            }
+        }
+
+        &--twitter {
+            &:hover i {
+                background-color: #41abe1;
+                border-radius: 15%;
+            }
+        }
+
+        &--linkedin {
+
+            color: $button-blue;
+
+            & i {
+                border-radius: 15%;
+            }
+
+            &:hover i {
+                background-color: #0077b5;
+                color: #fff;
+            }
+        }
+
+
+
+        &--pinterest {
+
+            & i {
+                border-radius: 50%;
+            }
+
+            &:hover i{
+                background-color: #fff;
+                color: #ba0110;
+            }
+        }
+    }
+
+    @media screen and (max-width: 720px) {
+        &__links {
+            font-size: 3rem;
+        }
+
+        &__social-list {
+            width: 90%;
+        }
+    }
+
+    @media screen and (max-width: 540px) {
+        &__social-item {
+            margin-bottom: 2rem;
+        }
+
+        &__social-list {
+            flex-direction: column;
+        }
+    }
 }

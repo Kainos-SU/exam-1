@@ -580,15 +580,40 @@ a {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 720px) {
+  .comments__text-block {
+    flex-wrap: wrap;
+  }
+}
 .comments__img {
   max-width: 445px;
   flex: 0 0 auto;
+}
+@media screen and (max-width: 960px) {
+  .comments__img {
+    flex: 1 1 auto;
+  }
+}
+@media screen and (max-width: 720px) {
+  .comments__img {
+    margin: 0 auto 20px;
+  }
 }
 .comments__img img {
   width: 100%;
 }
 .comments__comment {
-  padding: 0 45px 0 60px;
+  padding: 15px 45px 15px 60px;
+}
+@media screen and (max-width: 960px) {
+  .comments__comment {
+    flex: 0 2 auto;
+  }
+}
+@media screen and (max-width: 720px) {
+  .comments__comment {
+    padding: 15px 50px;
+  }
 }
 .comments__author {
   text-transform: uppercase;
@@ -613,6 +638,83 @@ a {
 .footer {
   background-color: #000;
   text-align: center;
+  padding: 120px 0 50px;
+}
+.footer__title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 1.0625rem;
+}
+.footer__subtitle {
+  text-transform: capitalize;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 1.875rem;
+}
+.footer__social-list {
+  width: 200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__links {
+  color: #fff;
+  vertical-align: middle;
+  font-size: 1rem;
+}
+.footer__links i {
+  transition-property: color, background-color;
+  transition: 0.25s;
+}
+.footer__links--youtube i {
+  border-radius: 25%;
+}
+.footer__links--youtube:hover i {
+  background-color: #fff;
+  color: red;
+}
+.footer__links--facebook:hover i {
+  background-color: #1877f2;
+  border-radius: 50%;
+}
+.footer__links--twitter:hover i {
+  background-color: #41abe1;
+  border-radius: 15%;
+}
+.footer__links--linkedin {
+  color: #5474fd;
+}
+.footer__links--linkedin i {
+  border-radius: 15%;
+}
+.footer__links--linkedin:hover i {
+  background-color: #0077b5;
+  color: #fff;
+}
+.footer__links--pinterest i {
+  border-radius: 50%;
+}
+.footer__links--pinterest:hover i {
+  background-color: #fff;
+  color: #ba0110;
+}
+@media screen and (max-width: 720px) {
+  .footer__links {
+    font-size: 3rem;
+  }
+  .footer__social-list {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 540px) {
+  .footer__social-item {
+    margin-bottom: 2rem;
+  }
+  .footer__social-list {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
